@@ -35,7 +35,7 @@ def func_0():
     
     f_zero = (zero_point**2-1)/(zero_point-1)
     
-    label = f"$0$"
+    label = "$x\in(-∞;1) \cup (1;+\infty)$"
     
     title = "$y = (x^2-1)/(x-1)$"
     
@@ -54,7 +54,7 @@ def func_1():
     
     obl_asymptote = None
     
-    label = "$C0$"
+    label = "$x>0$"
     
     inflexion_point_x = None
     
@@ -102,7 +102,7 @@ def func_2():
     
     f_zero = None
     
-    label = f"$0$"
+    label = "$x \in (0;1) \cup (1;+\infty) $"
     
     y = (np.piecewise(x, [(x < 0.99), ((x >= 0.99) & (x <= 1.01)), (x>1.01)],
                           [lambda x: np.emath.logn(x, x**2), np.nan, lambda x: np.emath.logn(x, x**2)]))
@@ -137,7 +137,7 @@ def func_3():
     
     f_zero = None
     
-    label = "$0$"
+    label = "$x \in (0;1) \cup (1;+\infty) $"
     
     y = (np.piecewise(x, [(x < 0.99), ((x >= 0.99) & (x <= 1.01)), (x>1.01)],
                           [lambda x: np.emath.logn(x**2, x), np.nan, lambda x: np.emath.logn(x**2, x)]))
@@ -172,7 +172,7 @@ def func_4():
     
     f_zero = None
     
-    label = f"$0$"
+    label = "$x \in (-\infty;-1) \cup (-1;0) \cup (0;1) \cup (1;+\infty)$"
     
     y = (np.piecewise(x, [(x < -1.01), ((x >= -1.01) & (x <= -0.99)), ((x > -0.99) & (x < -0.01)), ((x >= -0.01) & (x <= 0.01)), 
                           ((x > 0.01) & (x < 0.99)), ((x >= 0.99) & (x <= 1.01)), (x>1.01)], 
