@@ -91,7 +91,7 @@ class DataContainer:
                 
                 ax.axvline(x=x_as, color="red", linestyle="--")
                 
-                if y_asymptote[0] is None:
+                if y_asymptote is None:
                     
                     ax.plot(self.x, np.ma.masked_where(self.x > x_as-0.01, self.y), **kwargs)
                     ax.plot(self.x, np.ma.masked_where(self.x < x_as+0.01, self.y), **kwargs)

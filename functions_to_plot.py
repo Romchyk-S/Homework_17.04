@@ -48,7 +48,7 @@ def func_1():
     
     x = np.arange(0.01, 10, 0.01)    
     
-    x_asymptote = None
+    x_asymptote = [0]
     
     y_asymptote = None
     
@@ -80,7 +80,7 @@ def func_2():
     
     x = np.arange(0.01, 10, 0.1)    
     
-    x_asymptote = None
+    x_asymptote = [0]
     
     y_asymptote = None
     
@@ -115,7 +115,7 @@ def func_3():
     
     x = np.arange(0.01, 10, 0.1)    
     
-    x_asymptote = None
+    x_asymptote = [0]
     
     y_asymptote = None
     
@@ -150,7 +150,7 @@ def func_4():
     
     x = np.arange(-10, 10, 0.1)    
     
-    x_asymptote = None
+    x_asymptote = [0]
     
     y_asymptote = None
     
